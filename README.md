@@ -206,7 +206,6 @@ for f in examples/errors/*.omar; do echo "$f"; ./omar $f; done
 
 ```
 OmarPlusPlus/
-├── omarpp_all.cpp    the whole language in one file (easiest to build)
 ├── build.sh          builds omarpp_all.cpp and checks the version
 ├── main.cpp          reads the file and runs the phases
 ├── token.h           token types, Token, OmarError
