@@ -8,7 +8,19 @@ source.omar -> Lexer -> tokens -> Parser -> AST -> Semantic Analyzer -> Interpre
                (1)                (2)             (3)                  (4)
 ```
 
-## Build
+## Quick start (easiest way)
+
+The whole language is also available as ONE file, `omarpp_all.cpp`, so old and new files can never get mixed up.
+
+```bash
+g++ -std=c++17 -O1 -o omar omarpp_all.cpp     # or just run: bash build.sh   (Windows cmd: build.bat)
+./omar --version                               # must print: Omar++ 1.0 (full language ...)
+./omar examples/loops.omar
+```
+
+If `--version` is not recognized, you are running an OLD build: delete it (`rm -f omar omar.exe`) and build again.
+
+## Build (separate files)
 
 Needs a C++17 compiler (g++ or clang++).
 
@@ -206,6 +218,8 @@ for f in examples/errors/*.omar; do echo "$f"; ./omar $f; done
 
 ```
 OmarPlusPlus/
+├── omarpp_all.cpp    the whole language in one file (easiest to build)
+├── build.sh          builds omarpp_all.cpp and checks the version
 ├── main.cpp          reads the file and runs the phases
 ├── token.h           token types, Token, OmarError
 ├── lexer.h/.cpp      phase 1: source text -> tokens

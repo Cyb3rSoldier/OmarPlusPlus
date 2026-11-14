@@ -11,6 +11,7 @@
 
 static void printUsage() {
     std::cerr << "Usage: omar [options] <file.omar>\n"
+              << "  --version  show the Omar++ version\n"
               << "  --tokens   print the token stream (lexer output) before running\n"
               << "  --check    only check the program (lexer, parser, semantic analysis); do not run it\n";
 }
@@ -22,6 +23,10 @@ int main(int argc, char* argv[]) {
 
     for (int i = 1; i < argc; i++) {
         std::string arg = argv[i];
+        if (arg == "--version") {
+            std::cout << "Omar++ 1.0 (full language: lexer, parser, semantic analysis, interpreter)\n";
+            return 0;
+        }
         if (arg == "--tokens") showTokens = true;
         else if (arg == "--check") checkOnly = true;
         else path = arg;

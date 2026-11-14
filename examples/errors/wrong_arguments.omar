@@ -1,0 +1,5 @@
+kaj purno f(purno a) {
+    ferot a;
+}
+dekhao f(1, 2);
+shesh
