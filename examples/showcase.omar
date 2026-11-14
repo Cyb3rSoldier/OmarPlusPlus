@@ -1,0 +1,61 @@
+tika A bigger program: primes, gcd and bubble sort
+
+kaj sottoMitha isPrime(purno n) {
+    jodi n choto 2 {
+        ferot mittha;
+    }
+    purno d dhoro 2;
+    cholteThako d gunon d choto n jog 1 {
+        jodi n vagshesh d somoman 0 {
+            ferot mittha;
+        }
+        barao d;
+    }
+    ferot sotto;
+}
+
+kaj purno gcd(purno a, purno b) {
+    cholteThako b boro 0 {
+        purno t dhoro b;
+        b dhoro a vagshesh b;
+        a dhoro t;
+    }
+    ferot a;
+}
+
+kaj sort(talika list) {
+    purno n dhoro dorgho(list);
+    ghuro i dhoro 0 theke n biyog 2 {
+        ghuro j dhoro 0 theke n biyog i biyog 2 {
+            jodi list[j] boro list[j jog 1] {
+                purno temp dhoro list[j];
+                list[j] dhoro list[j jog 1];
+                list[j jog 1] dhoro temp;
+            }
+        }
+    }
+}
+
+dekhao "Primes up to 30:";
+talika primes;
+ghuro n dhoro 1 theke 30 {
+    jodi isPrime(n) {
+        jukto(primes, n);
+    }
+}
+dekhao primes;
+
+dekhao "gcd(48, 18) =", gcd(48, 18);
+
+talika data dhoro [64, 34, 25, 12, 22, 11, 90];
+dekhao "Before sort:", data;
+sort(data);
+dekhao "After sort: ", data;
+
+tika shesh inside a block stops the program immediately
+jodi dorgho(data) boro 3 {
+    dekhao "Stopping early";
+    shesh;
+}
+dekhao "This line is never printed";
+shesh

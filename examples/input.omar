@@ -1,0 +1,13 @@
+tika Reading input with nao
+lekha name;
+purno a;
+purno b;
+
+nao "Enter your name: ", name;
+nao "Enter first number: ", a;
+nao "Enter second number: ", b;
+
+dekhao "Hello,", name jog "!";
+dekhao a, "+", b, "=", a jog b;
+dekhao a, "*", b, "=", a gunon b;
+shesh

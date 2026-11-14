@@ -6,7 +6,7 @@
 
 #include "token.h"
 
-// Converts Omar++ source text into a list of tokens.
+// Phase 1: converts Omar++ source text into a list of tokens.
 class Lexer {
 public:
     explicit Lexer(std::string source);
@@ -20,6 +20,7 @@ private:
     bool atEnd() const;
     char peek(size_t offset = 0) const;
     char advance();
+    OmarError error(int atLine, const std::string& message) const;
 
     Token number();
     Token text();

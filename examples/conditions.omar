@@ -1,0 +1,40 @@
+tika jodi / onnothayjodi / nahole and logical operators
+purno marks dhoro 72;
+
+jodi marks boro 79 {
+    dekhao "Grade A";
+} onnothayjodi marks boro 59 {
+    dekhao "Grade B";
+} onnothayjodi marks boro 39 {
+    dekhao "Grade C";
+} nahole {
+    dekhao "Fail";
+}
+
+tika logical operators: ebong (and), othoba (or), noi (not)
+purno a dhoro 8;
+jodi a boro 5 ebong a choto 10 {
+    dekhao "a is between 5 and 10";
+}
+jodi a somoman 1 othoba a somoman 8 {
+    dekhao "a is 1 or 8";
+}
+jodi noi a somoman 3 {
+    dekhao "a is not 3";
+}
+
+tika >= and <= are built from the basic operators
+jodi noi a choto 8 {
+    dekhao "a >= 8";
+}
+
+tika comparing text and booleans
+lekha pass dhoro "omar";
+jodi pass somoman "omar" {
+    dekhao "Password correct";
+}
+sottoMitha ready dhoro sotto;
+jodi ready {
+    dekhao "Ready!";
+}
+shesh

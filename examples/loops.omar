@@ -1,0 +1,35 @@
+tika ghuro (for), cholteThako (while), thamo (break), chaliyejao (continue)
+
+dekhao "Count 1 to 5:";
+ghuro i dhoro 1 theke 5 {
+    dekhao i;
+}
+
+dekhao "Countdown:";
+ghuro i dhoro 3 theke 1 {
+    dekhao i;
+}
+
+dekhao "While loop:";
+purno n dhoro 1;
+cholteThako n choto 20 {
+    dekhao n;
+    n dhoro n gunon 2;
+}
+
+dekhao "Odd numbers up to 9 (chaliyejao skips evens):";
+ghuro i dhoro 1 theke 20 {
+    jodi i boro 9 {
+        thamo;
+    }
+    jodi i vagshesh 2 somoman 0 {
+        chaliyejao;
+    }
+    dekhao i;
+}
+
+dekhao "Multiplication table of 7:";
+ghuro k dhoro 1 theke 5 {
+    dekhao "7 x", k, "=", 7 gunon k;
+}
+shesh

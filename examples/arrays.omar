@@ -1,0 +1,42 @@
+tika talika (list): create, read, change, grow, loop
+talika nums dhoro [4, 8, 15, 16, 23, 42];
+dekhao "List:", nums;
+dekhao "First:", nums[0];
+dekhao "Last:", nums[dorgho(nums) biyog 1];
+dekhao "Size:", dorgho(nums);
+
+nums[0] dhoro 100;
+barao nums[1];
+dekhao "Changed:", nums;
+
+jukto(nums, 99);
+dekhao "After jukto:", nums;
+
+tika sum and maximum using a loop
+purno sum dhoro 0;
+purno biggest dhoro nums[0];
+ghuro i dhoro 0 theke dorgho(nums) biyog 1 {
+    sum dhoro sum jog nums[i];
+    jodi nums[i] boro biggest {
+        biggest dhoro nums[i];
+    }
+}
+dekhao "Sum:", sum;
+dekhao "Biggest:", biggest;
+
+tika building a list with a loop
+talika squares;
+ghuro i dhoro 1 theke 6 {
+    jukto(squares, i gunon i);
+}
+dekhao "Squares:", squares;
+
+tika mixed values and nested lists
+talika mixed dhoro [1, "two", 3.5, sotto, [7, 8]];
+dekhao mixed;
+dekhao mixed[4][1];
+
+tika a lekha can be indexed too
+lekha word dhoro "Omar";
+dekhao word[0], word[3], dorgho(word);
+shesh

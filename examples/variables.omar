@@ -1,0 +1,34 @@
+tika Variables, constants and types
+purno age dhoro 21;
+dosomik height dhoro 5.9;
+lekha name dhoro "Omar";
+sottoMitha student dhoro sotto;
+drubok dosomik PI dhoro 3.14159;
+
+dekhao "Name:", name;
+dekhao "Age:", age;
+dekhao "Height:", height;
+dekhao "Student:", student;
+dekhao "PI:", PI;
+
+tika change a variable
+age dhoro age jog 1;
+dekhao "Age now:", age;
+
+tika increment and decrement
+barao age;
+dekhao "After barao:", age;
+komao age;
+komao age;
+dekhao "After two komao:", age;
+
+tika a variable without a value gets a default
+purno count;
+lekha empty;
+dekhao "Defaults:", count, "[" jog empty jog "]";
+
+tika purno can be stored in dosomik
+dosomik price dhoro 100;
+dekhao "Price:", price;
+dekhao "Circle area (r = 2):", PI gunon 2 ghat 2;
+shesh

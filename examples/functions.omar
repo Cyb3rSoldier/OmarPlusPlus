@@ -1,0 +1,42 @@
+tika Functions: kaj, ferot, recursion
+
+kaj purno add(purno a, purno b) {
+    ferot a jog b;
+}
+
+kaj purno factorial(purno n) {
+    jodi n choto 2 {
+        ferot 1;
+    }
+    ferot n gunon factorial(n biyog 1);
+}
+
+kaj purno fibonacci(purno n) {
+    jodi n choto 2 {
+        ferot n;
+    }
+    ferot fibonacci(n biyog 1) jog fibonacci(n biyog 2);
+}
+
+tika no return type means the function returns nothing
+kaj greet(lekha who) {
+    dekhao "Hello,", who jog "!";
+}
+
+kaj sottoMitha isEven(purno n) {
+    ferot n vagshesh 2 somoman 0;
+}
+
+kaj dosomik average(dosomik a, dosomik b) {
+    ferot (a jog b) vagfol 2;
+}
+
+greet("Omar");
+dekhao "add(3, 4) =", add(3, 4);
+dekhao "5! =", factorial(5);
+dekhao "10! =", factorial(10);
+dekhao "fibonacci(15) =", fibonacci(15);
+dekhao "isEven(10) =", isEven(10);
+dekhao "isEven(7) =", isEven(7);
+dekhao "average(3, 4) =", average(3, 4);
+shesh
