@@ -5,11 +5,6 @@ ghuro i dhoro 1 theke 5 {
     dekhao i;
 }
 
-dekhao "Countdown:";
-ghuro i dhoro 3 theke 1 {
-    dekhao i;
-}
-
 dekhao "While loop:";
 purno n dhoro 1;
 cholteThako n choto 20 {

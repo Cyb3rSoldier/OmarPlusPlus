@@ -1,11 +1,11 @@
 tika jodi / onnothayjodi / nahole and logical operators
-purno marks dhoro 72;
+purno marks dhoro 65;
 
 jodi marks boro 79 {
-    dekhao "Grade A";
-} onnothayjodi marks boro 59 {
+    dekhao "Grade A+";
+} onnothayjodi marks boro 69 {
     dekhao "Grade B";
-} onnothayjodi marks boro 39 {
+} onnothayjodi marks boro 59 {
     dekhao "Grade C";
 } nahole {
     dekhao "Fail";

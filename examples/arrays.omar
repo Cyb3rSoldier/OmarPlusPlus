@@ -24,18 +24,6 @@ ghuro i dhoro 0 theke dorgho(nums) biyog 1 {
 dekhao "Sum:", sum;
 dekhao "Biggest:", biggest;
 
-tika building a list with a loop
-talika squares;
-ghuro i dhoro 1 theke 6 {
-    jukto(squares, i gunon i);
-}
-dekhao "Squares:", squares;
-
-tika mixed values and nested lists
-talika mixed dhoro [1, "two", 3.5, sotto, [7, 8]];
-dekhao mixed;
-dekhao mixed[4][1];
-
 tika a lekha can be indexed too
 lekha word dhoro "Omar";
 dekhao word[0], word[3], dorgho(word);
